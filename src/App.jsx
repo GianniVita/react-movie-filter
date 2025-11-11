@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 
 const initialMovies = [
   { title: 'Inception', genre: 'Fantascienza' },
@@ -9,5 +9,24 @@ const initialMovies = [
   { title: 'Pulp Fiction', genre: 'Thriller' },
 ];
 
-function MovieFilter() {
- 
+function App() {
+    const [count,setCount] = useState;
+
+
+
+return (
+
+<div>
+  <h1>Lista dei Film 🍿</h1>
+
+</div>
+
+
+
+);
+
+}
+
+
+
+export defaul App
