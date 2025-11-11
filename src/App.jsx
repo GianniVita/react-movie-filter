@@ -20,21 +20,33 @@ function MovieFilter() {
 const [filteredMovies, setFilteredMovies] = useState(initialMovies);
 
 return (
+      <>
+  <div className="container mt-5">
+    <h1 className="mb-4">Lista Film 🍿</h1>
 
-  <div className='container mt-5'>
-      <form>
+    {/* Controlli di Filtro */}
+    <div className="mb-3">
+      <label htmlFor="genre-select" className="form-label">Filtra per Genere:</label>
+      <select
+        id="genre-select"
+        className="form-select w-auto" // Aggiunge classi Bootstrap per lo stile
+        value={selectedGenre}
+        onChange={(e) => setSelectedGenre(e.target.value)}
+        >
+        {/* Opzione per mostrare tutti i film */}
+        <option value="">Tutti i Generi</option>
 
+        {/* Mappa i generi disponibili */}
+        {genres.map(genre => (
+          <option key={genre} value={genre}>{genre}</option>
+        ))}
+      </select>
+    </div>
 
-
-
-      </form>
-
+    <hr />
 
   </div>
-
-
-
-
+      </>
 )
 
 
