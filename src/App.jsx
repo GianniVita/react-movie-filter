@@ -21,12 +21,12 @@ const [filteredMovies, setFilteredMovies] = useState(initialMovies);
 
 return (
 
-  <div>
+  <div className='container mt-5'>
       <form>
 
 
 
-        
+
       </form>
 
 
