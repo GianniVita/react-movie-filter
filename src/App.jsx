@@ -17,7 +17,25 @@ const initialMovies = [
 
 function MovieFilter() {
 
+const [filteredMovies, setFilteredMovies] = useState(initialMovies);
 
+return (
+
+  <div>
+      <form>
+
+
+
+        
+      </form>
+
+
+  </div>
+
+
+
+
+)
 
 
 
@@ -39,4 +57,4 @@ function App() {
   )
 }
 
-export default App
+export default MovieFilter
