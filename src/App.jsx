@@ -10,16 +10,24 @@ const initialMovies = [
 ];
 
 function App() {
-    const [count,setCount] = useState;
+    const [count,setCount] = useState(0);
 
 
 
 return (
-
-<div>
+<>
+<div className='container'>
   <h1>Lista dei Film 🍿</h1>
+  <ul>
+    <li>{initialMovies}</li>
+  </ul>
 
 </div>
+
+
+
+
+</>
 
 
 
@@ -29,4 +37,9 @@ return (
 
 
 
-export defaul App
+export default function App(){
+
+  return <initialMovies title={title.id} />
+
+
+}
